@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
-"""function train_tree(clf, X, y) to train a tree-based classifier using Scikit-learn.
+"""Tree classifier training module.
 
-Arguments:
-
-clf: A Scikit-learn classifier instance
-X: Input features
-y: Target labels
-Returns:
-
-None
+This module provides a function to train a tree-based classifier
+using Scikit-learn.
 """
-
-import
-from sklearn.tree import DecisionTreeClassifier
 
 
 def train_tree(clf, X, y):
+    """Trains a tree-based classifier.
+
+    Args:
+        clf: A Scikit-learn classifier instance.
+        X: Input features.
+        y: Target labels.
+
+    Returns:
+        None
+    """
     clf.fit(X, y)
+
