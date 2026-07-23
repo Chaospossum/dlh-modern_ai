@@ -4,7 +4,7 @@
 This module provides a function to view the decision rules of a trained
 tree-based classifier using Scikit-learn.
 """
-from sklearn.tree import export_text
+from sklearn import tree
 
 
 def draw(clf, feature_names, class_names):
