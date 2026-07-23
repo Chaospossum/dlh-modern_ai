@@ -11,7 +11,9 @@ Returns:
 None
 """
 
-import from sklearn.tree import DecisionTreeClassifier
+import
+from sklearn.tree import DecisionTreeClassifier
+
 
 def train_tree(clf, X, y):
     clf.fit(X, y)
