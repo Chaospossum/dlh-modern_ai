@@ -18,7 +18,7 @@ def draw(clf, feature_names, class_names):
     Returns:
         None
     """
-    tree_rules = export_text(
+    tree_rules = tree.export_text(
         clf,
         feature_names=feature_names,
         class_names=class_names
