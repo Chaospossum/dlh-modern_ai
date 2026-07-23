@@ -18,4 +18,3 @@ def train_tree(clf, X, y):
         None
     """
     clf.fit(X, y)
-
