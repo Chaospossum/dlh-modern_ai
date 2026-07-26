@@ -3,7 +3,8 @@
 
 from sklearn import tree
 train_tree = __import__('1-train').train_tree
-generate_predictions = __import__('3-generate_predictions').generate_predictions
+predictions_module = __import__('3-generate_predictions')
+generate_predictions = predictions_module.generate_predictions
 
 
 def prune_and_evaluate_trees(
