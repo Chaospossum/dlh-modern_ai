@@ -12,4 +12,5 @@ def get_pruning_path(clf, X, y):
     Returns:
         tuple: (ccp_alphas, impurities) as NumPy arrays.
     """
-    return clf.cost_complexity_pruning_path(X, y)
+    path = clf.cost_complexity_pruning_path(X, y)
+    return path.ccp_alphas, path.impurities
