@@ -9,7 +9,7 @@ from sklearn import metrics
 
 
 def evaluate(true_labels, predicted_labels, class_names):
-    """Generate a classification report for the given true and predicted labels.
+    """Generate classification report for the given true and predicted labels.
 
     Args:
         true_labels: Array-like of true labels.
