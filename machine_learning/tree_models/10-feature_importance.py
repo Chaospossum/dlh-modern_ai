@@ -2,6 +2,7 @@
 """A function to calculate feature importance."""
 import numpy as np
 
+
 def feature_importance(rf):
     """Arguments:
 
@@ -9,7 +10,8 @@ def feature_importance(rf):
     Returns:
 
     importances: A NumPy array of feature importance scores.
-    indices: A NumPy array of feature indices sorted from least to most important (ascending order).
+    indices: A NumPy array of feature indices sorted from least to most
+        important (ascending order).
     """
     indices = np.argsort(rf.feature_importances_)
     return rf.feature_importances_, indices
