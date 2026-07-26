@@ -4,7 +4,9 @@ Function prepruning(X, y, clf) that uses Scikit-learn to perform a Grid Search
 for the best pre-pruning hyperparameters for a decision tree classifier.
 """
 
+
 from sklearn import model_selection
+
 
 def prepruning(X, y, clf):
     """The search explores the following hyperparameters:
@@ -32,4 +34,3 @@ def prepruning(X, y, clf):
     grid_search = model_selection.GridSearchCV(clf, param_grid, cv=5)
     grid_search.fit(X, y)
     return grid_search.best_params_
-
