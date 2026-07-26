@@ -58,4 +58,4 @@ def prune_and_evaluate_trees(X_train, y_train, X_test, y_test, ccp_alphas, rando
         # 5. Save the trained classifier to the list
         clfs.append(clf)
 
-    return clfs, train_scores, test_scores
+    return clfs, train_scores, test_scores(float(test_acc))
