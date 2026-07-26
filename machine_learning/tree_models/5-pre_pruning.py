@@ -30,5 +30,6 @@ def prepruning(X, y, clf):
         "min_samples_split": [2, 3, 4],  # range [2, 5) → 2, 3, 4
     }
     grid_search = model_selection.GridSearchCV(clf, param_grid, cv=5)
-    return grid_search
+    grid_search.fit(X, y)
+    return param_search.best_params_
 
