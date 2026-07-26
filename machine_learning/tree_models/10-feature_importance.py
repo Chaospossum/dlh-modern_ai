@@ -11,6 +11,5 @@ def feature_importance(rf):
     importances: A NumPy array of feature importance scores.
     indices: A NumPy array of feature indices sorted from least to most important (ascending order).
     """
-    feature_importances = np.argsort(rf.feature_importances_)
-    indices = np.argsort(feature_importances)
-    return feature_importances[indices], indices
+    indices = np.argsort(rf.feature_importances_)
+    return rf.feature_importances_, indices
