@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+"""
+One-line summary of what this script does.
+
+Longer description if you need it: what it takes in, what it spits out.
+"""
+
+import sys
+
+
+def main(args):
+    """Do the thing. Return an exit code (0 = success)."""
+    print("args:", args)
+    return 0
+
