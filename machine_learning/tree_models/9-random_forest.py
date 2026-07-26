@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """A function to create a random forest classifier."""
-from sklearn.ensemble import RandomForestClassifier
+from sklearn import ensemble
 
 
 def random_forest(n_estimators, random_state):
@@ -12,7 +12,7 @@ def random_forest(n_estimators, random_state):
     Returns:
     model: A Scikit-learn RandomForestClassifier instance."""
 
-    model = RandomForestClassifier(
+    model = ensemble.RandomForestClassifier(
         n_estimators=n_estimators, random_state=random_state
     )
     return model
