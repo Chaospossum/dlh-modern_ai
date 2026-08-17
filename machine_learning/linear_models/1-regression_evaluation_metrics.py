@@ -6,7 +6,6 @@ Compute common evaluation metrics for regression tasks using Scikit-learn.
 import numpy as np
 from sklearn import metrics
 
-
 def evaluation_metrics_for_regression(y_true, y_pred):
     """Compute common evaluation metrics for regression tasks.
 
