@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Write a function evaluation_metrics_for_regression(y_true, y_pred) to compute common evaluation metrics for
 regression tasks using Scikit-learn.
- """
-
+"""
 import numpy as np
 from sklearn import metrics
 
