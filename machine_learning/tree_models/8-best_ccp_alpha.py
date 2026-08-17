@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Select the best ccp_alpha for post-pruning a decision tree."""
 
+import numpy as np
+from sklearn import ensemble
+
 
 def get_best_alpha(clfs, train_scores, test_scores, ccp_alphas):
     """Select the best ccp_alpha based on test accuracy and generalization.
