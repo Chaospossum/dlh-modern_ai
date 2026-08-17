@@ -4,7 +4,7 @@ regression tasks using Scikit-learn.
  """
 
 import numpy as np
-from sklearn.metrics import metrics
+from sklearn import metrics
 
 def evaluation_metrics_for_regression(y_true, y_pred):
     """Arguments:
