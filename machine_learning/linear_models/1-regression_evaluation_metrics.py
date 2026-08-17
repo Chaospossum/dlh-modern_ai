@@ -19,9 +19,9 @@ rmse: Root Mean Squared Error – square root of the MSE, representing error in 
 mae: Mean Absolute Error – average absolute difference between actual and predicted values.
 r2: R² Score – indicates how well the model explains the variance in the target variable (1 means perfect prediction).
 """
-
-mae = mean_absolute_error(y_true, y_pred)
-mse = mean_squared_error(y_true, y_pred)
+mae = metrics.mean_absolute_error(y_true, y_pred)
+mse = metrics.mean_squared_error(y_true, y_pred)
 rmse = np.sqrt(mse)
-r2 = r2_score(y_true, y_pred)
+r2 = metrics.r2_score(y_true, y_pred)
+
 return mae, mse, r2 , rmse
