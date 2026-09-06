@@ -9,11 +9,13 @@ from sklearn import linear_model
 def ridge_regression(random_state):
     """Create and return a Ridge Regression model with L2 regularization.
 
-    Ridge Regression extends ordinary linear regression by adding L2 regularization,
-    which helps stabilize the model by shrinking large coefficients.
+    Ridge Regression extends ordinary linear regression by adding L2
+    regularization, which helps stabilize the model by shrinking large
+    coefficients.
 
     Args:
-        random_state: An integer used to set the random seed for reproducibility.
+        random_state: An integer used to set the random seed for
+            reproducibility.
 
     Returns:
         An untrained Ridge regression model instance.
