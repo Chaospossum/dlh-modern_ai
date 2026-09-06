@@ -7,7 +7,7 @@ for binary classification tasks using Scikit-learn.
 from sklearn import linear_model
 
 
-def logistic_regression(random_state):
+def Logistic_Regression_Model(random_state):
     """Create and return an untrained LogisticRegression model.
 
     Logistic Regression is a linear model for binary classification that fits
