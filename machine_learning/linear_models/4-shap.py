@@ -1,10 +1,17 @@
+#!/usr/bin/env python3
+"""SHAP values for model interpretation.
+
+This module provides functions to get SHAP explainer and SHAP values.
+"""
 import shap
+
 
 def get_shap_explainer_and_values(model, X_train, X_test):
     """Generate SHAP explainer and SHAP values for a trained regression model.
 
     Args:
-        model: A trained regression model (e.g., Ridge, RandomForestRegressor).
+        model: A trained regression model (e.g., Ridge,
+            RandomForestRegressor).
         X_train: Training data (used as background for the explainer).
         X_test: Test data to compute SHAP values for.
 
