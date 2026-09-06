@@ -4,7 +4,7 @@
 This module provides a function to create an untrained LogisticRegression model
 for binary classification tasks using Scikit-learn.
 """
-from sklearn.linear_model import LogisticRegression
+from sklearn import linear_model
 
 
 def logistic_regression(random_state):
@@ -19,8 +19,11 @@ def logistic_regression(random_state):
             reproducibility in the model's optimization process.
 
     Returns:
-        An untrained LogisticRegression instance ready to be fitted with
-        training data.
+        An untrained LogisticRegression instance. The model supports:
+        - get_params() for hyperparameters
+        - Checking fitted state via hasattr(model, 'coef_')
+        - predict() for class labels
+        - predict_proba() for class probabilities
     """
-    model = LogisticRegression(random_state=random_state)
+    model = linear_model.LogisticRegression(random_state=random_state)
     return model
