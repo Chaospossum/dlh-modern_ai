@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
-"""Clustering validation."""
+"""Clustering validation script."""
 import numpy as np
-
-
-def main():
-    """Validate clustering inputs."""
-    pass
 
 
 if __name__ == "__main__":
